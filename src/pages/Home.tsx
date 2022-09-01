@@ -14,6 +14,9 @@ import Form from "../components/Form";
 import Video from "../components/Video";
 import License from "../components/License";
 
+import ElonURL from "../assets/Elon_Musk.jpeg";
+import ObamaURL from "../assets/Obama.jpeg";
+
 function Home() {
   const confTime = new Date("2024-01-03 9:00:00");
   const timeToConf = intervalToDuration({
@@ -70,14 +73,14 @@ function Home() {
         <BigText>Speakers</BigText>
 
         <Speakers>
-          <Speakers.Headshot src={"/src/assets/Elon_Musk.jpeg"} />
+          <Speakers.Headshot src={ElonURL} />
           <Speakers.Detail name={"Elon Musk"} title={"Quixotic Billionaire"}>
             <p>
               Elon will be discussing the role of space exploration, neural
               interfaces and transportation innovation in family life.{" "}
             </p>
           </Speakers.Detail>
-          <Speakers.Headshot src={"/src/assets/Obama.jpeg"} />
+          <Speakers.Headshot src={ObamaURL} />
           <Speakers.Detail name={"Michelle Obama"} title={"Influencer"}>
             <p>
               Michelle hits the stage with a hilarious yet profound one-woman
